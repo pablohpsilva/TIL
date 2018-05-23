@@ -139,20 +139,35 @@
 #### JS Questions:
 
 * Explain event delegation
+  * **R**: It's when you delegate the event handling/listening to a parent node
 * Explain how `this` works in JavaScript
+  * **R**: 
 * Explain how prototypal inheritance works
+  * **R**: 
 * What do you think of AMD vs CommonJS?
+  * **R**: 
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
+  * **R**: Because you're not done declaring something and is trying to execute it. In order to make it work, place the function inside parenthesys then call it.
   * What needs to be changed to properly make it an IIFE?
 * What's the difference between a variable that is: `null`, `undefined` or undeclared?
-  * How would you go about checking for any of these states?
+  * **R**: 
+    * Null: the variable was declared and has null as value
+    * Undefined: the variable was declared, but not defined yet
+    * Undeclared: the variable was not declared/created
+* How would you go about checking for any of these states?
+  * **R**: 
 * What is a closure, and how/why would you use one?
+  * **R**: closure is created inside functions. It is generally used when there are inner function inside outer functions and closure refers to the hability the inner function has to access the outer function variables.
 * What's a typical use case for anonymous functions?
+  * **R**: writing IIFEs
 * How do you organize your code? (module pattern, classical inheritance?)
+  * **R**: module pattern
 * What's the difference between host objects and native objects?
 * Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
 * What's the difference between `.call` and `.apply`?
+  * **R**: `call` and `apply` do the same thing: call a function. The difference is that apply you call the function and pass in parameters as an array and call you pass in parameters as a list
 * Explain `Function.prototype.bind`.
+  * **R**: that function changes the context on where the function is called. it returns a function with that new scope.
 * When would you use `document.write()`?
 * What's the difference between feature detection, feature inference, and using the UA string?
 * Explain Ajax in as much detail as possible.
